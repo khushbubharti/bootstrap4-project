@@ -9,21 +9,99 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         .bg {
-            height: 300px;
-            width: 100%;
-            background-color: grey;
-
+            background-color: #D8D8D8
         }
+
         /* top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px. */
-        .p1{
-            margin-left: 580px
+        .p1 {
+            margin-left: 660px
+        }
+
+        .p2 {
+            margin-left: 60px
+        }
+
+        .p3 {
+            margin-left: 32px
         }
 
         .center {
             text-align: center;
+        }
+
+        .header {
+            height: 350px;
+            width: 100%;
+        }
+
+        .hw1 {
+            height: 350px;
+            width: 100%;
+        }
+
+        .ourpeaple {
+            height: 350px;
+            width: 100%;
+        }
+
+        .hw2 {
+            height: 300px;
+            width: 100%;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+
+            .header {
+                height: 400px;
+            }
+
+
+            .hw1 {
+                height: 550px;
+            }
+
+            .hw2 {
+                height: 400px;
+            }
+
+            .ourpeaple {
+                height: 550px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 768px) {
+            .hw1 {
+                height: 450px;
+            }
+
+            .hw2 {
+                height: 800px;
+            }
+
+            .ourpeaple {
+                height: 550px;
+            }
+        }
+
+        .icon {
+            font-size: 36px
+        }
+
+        .picture {
+            height: 180px;
+
+            width: 136px;
+        }
+
+
+        #more {
+            display: none;
         }
     </style>
 
@@ -32,46 +110,259 @@
 
 </head>
 
+
+
 <body>
 
-    <body>
-        <div class=" bg center container-fluid">
-            <h1>PRODUCT PHOTOGRAPHY SYDNEY</h1>
-            <h3>Delivery Premium Product Photography</h3>
 
-            <div>
-                <button type="button" class="btn btn-outline-dark">CONTACT US NOW FOR FREE ADVICE ON
-                    HOW TO SELL MORE</button>
-            </div>
+
+
+    <div class=" bg header center container-fluid">
+        <img src="dhanyut.jpg" class="rounded-circle" width="100" height="100">
+        <h1>PRODUCT PHOTOGRAPHY SYDNEY</h1>
+        <h3>Delivery Premium Product Photography</h3>
+
+        <div>
+            <button type="button" class="btn btn-outline-dark">CONTACT US NOW FOR FREE ADVICE ON
+                HOW TO SELL MORE</button>
         </div>
+    </div>
 
-        <div class=" container-fluid">
-            <p class="center">a helpful team of friedly professionals delivering premium <br>
-                product photography that helps you sell.</p>
-            <p class="p1">SHORT VERSION:</p>
-            <p class="p1">We are here to help show your products in the best way<br>
+    <div class="hw1 container-fluid">
+        <p class="center">a helpful team of friedly professionals delivering premium <br>
+            product photography that helps you sell.</p>
+
+        <p>&nbsp;</p>
+        <p class="p1">SHORT VERSION:</p>
+        <p class="p1">We are here to help show your products in the best way<br>
             possible. So they can sell themselves.</p>
 
-            <p class="p1">LONG VERSIONS:</p>
+        <p class="p1">LONG VERSIONS:</p>
+
+        <p class="p1"><span id="dots"></span><span id="more">We are a well established Sydney based product photography
+                studio. Formed in 2007 to serve the growing demand for fast and affordable quality product photography.
+                We have worked with numerous household names including David Jones, Sass n Bide, Lululemon, Marco Polo
+                and Ecoya, From Fairfax & Roberts to Diva and Jax Quickfit to name just a few. We ensure their products
+                look the very best they can, that they are powerful and that they command attention in a fierce online
+                sales environment.<br>
+
+                Our mission is simple: we aim to become an extension of your business through close professional
+                relationships built on good values, trust and a helpful approach to succeed together.<br>
+
+                If you’re selling products online and wish to drive sales further then you’ll understand the importance
+                of having your products stand out from the crowd. Over the years we have developed a wealth of knowledge
+                that enables us to understand, adapt, advise and tailor a package that directly meets your individual
+                needs. No matter your requirements, from still product product photography to 360 product shots or
+                video, clothing invisible mannequin style to flat-lay or even on live talent, look-books or creative
+                concepts, you can rest assured that we have it covered. We can also take care of all your
+                post-production requirements ensuring you receive only the very best result – on time, on budget and
+                stress free.</span></p>
+        <button onclick="myFunction()" id="myBtn" class="p1">Read more</button>
+    </div>
+
+
+    <div class="bg hw2 center container-fluid">
+        <h1>The Process</h1>
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-12">
+                <i class="fa fa-cubes icon"></i>
+
+                <p>1.SEND US YOUR PRODUCTS & REQUIREMENTS</p>
+
+                <P>It All Starts With Discussing Your Needs & Developing A Concept To Make Your Project Become A
+                    Success</P>
+
+
+            </div>
+            <div class="col-md-3 col-sm-3 col-12">
+                <i class='fa fa-check-square-o icon'></i>
+
+                <P>2.WE CAREFULLY PREPARE EACH OF YOUR ITEMS</p>
+
+                <P>Unpack Clean, Stream & Polish Your Products So They Look Their Best</P>
+
+
+            </div>
+            <div class="col-md-3 col-sm-3 col-12">
+                <i class="fa fa-camera icon"></i>
+
+                <p>3.WE THEN PHOTOGRAPH YOUR PRODUCTS</p>
+
+                <p>We Approach Each Item Indivisually, Providing Unique Lighting, Angle & Composition</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-12">
+                <i class="fa fa-retweet icon" aria-hidden="true"></i>
+
+
+                <P>AFTER WE EDIT, RETOUCH & SEND YOU FINISHED IMAGES</P>
+
+                <P>Repack Your Items With Care & Return Them With Final Images</P>
+            </div>
+        </div>
+    </div>
+
+    <div class="hw1 container-fluid">
+        <div class="row center">
+            <div class="col-md-4 col-sm-4">
+                <img src="dhanyut.jpg" class="rounded picture" alt="Cinque Terre">
+                <h3>Ckick to see more Product Photography</h3>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/105690274" class="picture">
+                    frameborder="0" allowfullscreen></iframe>
+                <h3>Ckick to see more Product Vidios</h3>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <img src="dhanyut.jpg" class="rounded picture" alt="Cinque Terre">
+                <h3>Ckick to see more 360 Product Images</h3>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="bg ourpeaple container-fluid">
+        <h1 class="center">Our People</h1>
+
+        <div class="row">
+            <div class="col-md col-sm-4">
+                <img src="dhanyut.jpg" class="rounded" alt="Cinque Terre" width="150" height="100">
+                <h6 class="p2">Ryan</h6>
+                <div class="p3">
+                    <p>Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                        Lorem Ipsum</p>
+                </div>
+            </div>
+
+            <div class="col-md col-sm-4">
+                <img src="dhanyut.jpg" class="rounded" alt="Cinque Terre" width="150" height="100">
+                <h6 class="p2">Kristna</h6>
+                <div class="p3">
+                    <p>Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                        Lorem Ipsum</p>
+                </div>
+            </div>
+
+            <div class="col-md col-sm-4">
+                <img src="dhanyut.jpg" class="rounded" alt="Cinque Terre" width="150" height="100">
+                <h6 class="p2">Pheobe</h6>
+                <div class="p3">
+                    <p>Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                        Lorem Ipsum</p>
+                </div>
+            </div>
+
+            <div class="col-md col-sm-4">
+                <img src="dhanyut.jpg" class="rounded" alt="Cinque Terre" width="150" height="100">
+                <h6 class="p2">Steve</h6>
+                <div class="p3">
+                    <p>Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                </div>
+            </div>
+
+            <div class="col-md col-sm-4">
+                <img src="dhanyut.jpg" class="rounded" alt="Cinque Terre" width="150" height="100">
+                <h6 class="p2">Was</h6>
+                <div class="p3">
+                    <p>Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                        Lorem Ipsum<br>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <h4>CONTACT</h4>
+
+                <form action="/action_page.php">
+
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <input type="Text" class="form-control" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number:</label>
+                        <input class="form-control" placeholder="Enter phone number">
+                    </div>
+                    <div class="form-group">
+                        <label>How did you find us Google Ad or Organic. Facebook Ad, Other? Thank You:</label>
+                        <input type="Text" class="form-control" placeholder=" ">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Massage:</label>
+                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">SEND MASSAGE</button>
+                </form>
+            </div>
 
 
 
-            <div class=" bg center container-fluid">
-                <h1>The Process</h1>
+            <div class="col-md-6 col-sm-6">
+                <h4>GET IN TOUCH</h4>
+                <p>If you want to disscus your ideas for new project we would love to hearfrom you. Just feel out the
+                    contact form or get in touch us via the detail below.</p>
+                <p>&nbsp;</p>
+                <h4>IMPACK IMAGES PTY LTD</h4>
+                <i class="fa fa-map-marker" aria-hidden="true"></i> 21a Falcon Street<br>
+                Crows Nest<br> Sydney<br> NSW 2065
+                <p>&nbsp;</p>
+                <i class="fa fa-envelope" aria-hidden="true"></i> studio@impackimages.com.au<br>
+
+                <i class="fa fa-phone" aria-hidden="true"></i> Studio: 02 8060 6068<br>
+
+                <i class="fa fa-mobile" aria-hidden="true"></i> 0449252146
+            </div>
+
+        </div>
+    </div>
 
 
 
 
 
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
 
-
-
-
-
-
-
-
-    </body>
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
 
 
 

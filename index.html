@@ -18,25 +18,30 @@
 
         /* top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px. */
         .p1 {
-            margin-left: 660px
+            margin-left: 50px
         }
 
-        .p2 {
-            margin-left: 60px
-        }
 
-        .p3 {
-            margin-left: 32px
-        }
 
         .center {
             text-align: center;
         }
 
         .header {
+            height: 340px;
+            width: 100%;
+        }
+
+        .shortversion {
             height: 350px;
             width: 100%;
         }
+
+        .vidio {
+            height: 300px;
+            width: 100%;
+        }
+
 
         .hw1 {
             height: 350px;
@@ -44,54 +49,82 @@
         }
 
         .ourpeaple {
-            height: 350px;
+            height: 400px;
             width: 100%;
         }
 
         .hw2 {
-            height: 300px;
+            height: 380px;
             width: 100%;
         }
 
-        /* Extra small devices (phones, 600px and down) */
-        @media only screen and (max-width: 600px) {
 
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 767px) {
             .header {
                 height: 400px;
             }
 
-
-            .hw1 {
-                height: 550px;
+            .shortversion {
+                height: 380px;
             }
 
-            .hw2 {
-                height: 400px;
-            }
-
-            .ourpeaple {
-                height: 550px;
-            }
-        }
-
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (max-width: 768px) {
             .hw1 {
                 height: 450px;
             }
 
             .hw2 {
-                height: 800px;
+                height: 540px;
+            }
+
+            .vidio {
+                height: 325px;
             }
 
             .ourpeaple {
-                height: 550px;
+                height: 620px;
             }
         }
+
+
+
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 599px) {
+
+            .header {
+                height: 500px;
+            }
+            .shortversion {
+                height: 430px;
+            }
+
+            .hw1 {
+                height: 550px;
+            }
+
+            .hw2 {
+                height: 960px;
+            }
+
+            .ourpeaple {
+                height: 1350px;
+            }
+
+            .vidio {
+                height: 780px;
+
+            }
+        }
+
+
+
 
         .icon {
             font-size: 36px
         }
+
+
 
         .picture {
             height: 180px;
@@ -102,6 +135,18 @@
 
         #more {
             display: none;
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -webkit-transform: scale(1.5);
+            /* Safari 3-8 */
+            transform: scale(1.5);
+        }
+
+        .zoom {
+            transition: transform .3s;
         }
     </style>
 
@@ -117,7 +162,7 @@
 
 
 
-    <div class=" bg header center container-fluid">
+    <div class=" bg header center container-fluid pt-5 pb-5">
         <img src="dhanyut.jpg" class="rounded-circle" width="100" height="100">
         <h1>PRODUCT PHOTOGRAPHY SYDNEY</h1>
         <h3>Delivery Premium Product Photography</h3>
@@ -128,109 +173,130 @@
         </div>
     </div>
 
-    <div class="hw1 container-fluid">
-        <p class="center">a helpful team of friedly professionals delivering premium <br>
+    <div class="shortversion text-center container-fluid pt-5 pb-5">
+        <p class="center">
+            a helpful team of friedly professionals delivering premium
             product photography that helps you sell.</p>
-
         <p>&nbsp;</p>
         <p class="p1">SHORT VERSION:</p>
-        <p class="p1">We are here to help show your products in the best way<br>
+        <p class="p1">We are here to help show your products in the best way
             possible. So they can sell themselves.</p>
 
         <p class="p1">LONG VERSIONS:</p>
 
-        <p class="p1"><span id="dots"></span><span id="more">We are a well established Sydney based product photography
-                studio. Formed in 2007 to serve the growing demand for fast and affordable quality product photography.
-                We have worked with numerous household names including David Jones, Sass n Bide, Lululemon, Marco Polo
-                and Ecoya, From Fairfax & Roberts to Diva and Jax Quickfit to name just a few. We ensure their products
-                look the very best they can, that they are powerful and that they command attention in a fierce online
-                sales environment.<br>
+        <p class="p1">
+            <span id="dots"></span>
+        <div id="more">
+            <p>
+                We are a well established Sydney based product photography
+                studio. Formed in 2007 to serve the growing demand for fast and affordable quality product
+                photography.
+                We have worked with numerous household names including David Jones, Sass n Bide, Lululemon, Marco
+                Polo
+                and Ecoya, From Fairfax & Roberts to Diva and Jax Quickfit to name just a few. We ensure their
+                products
+                look the very best they can, that they are powerful and that they command attention in a fierce
+                online
+                sales environment.
+            </p>
+            <p>
 
                 Our mission is simple: we aim to become an extension of your business through close professional
-                relationships built on good values, trust and a helpful approach to succeed together.<br>
+                relationships built on good values, trust and a helpful approach to succeed together.
+            </p>
+            <p>
 
-                If you’re selling products online and wish to drive sales further then you’ll understand the importance
-                of having your products stand out from the crowd. Over the years we have developed a wealth of knowledge
-                that enables us to understand, adapt, advise and tailor a package that directly meets your individual
+                If you’re selling products online and wish to drive sales further then you’ll understand the
+                importance
+                of having your products stand out from the crowd. Over the years we have developed a wealth of
+                knowledge
+                that enables us to understand, adapt, advise and tailor a package that directly meets your
+                individual
                 needs. No matter your requirements, from still product product photography to 360 product shots or
                 video, clothing invisible mannequin style to flat-lay or even on live talent, look-books or creative
                 concepts, you can rest assured that we have it covered. We can also take care of all your
                 post-production requirements ensuring you receive only the very best result – on time, on budget and
-                stress free.</span></p>
+                stress free.
+            </p>
+        </div>
+        </p>
         <button onclick="myFunction()" id="myBtn" class="p1">Read more</button>
     </div>
 
 
-    <div class="bg hw2 center container-fluid">
+    <div class="bg hw2 center container-fluid pt-5 pb-5">
         <h1>The Process</h1>
         <div class="row">
-            <div class="col-md-3 col-sm-3 col-12">
-                <i class="fa fa-cubes icon"></i>
-
-                <p>1.SEND US YOUR PRODUCTS & REQUIREMENTS</p>
+            <div class="col-md-3 col-sm-3 col-12 pt-3">
+                <i class="fa fa-cubes icon zoom "></i>
+                
+                <p class="mt-3">1.SEND US YOUR PRODUCTS &<br>
+                    REQUIREMENTS</p>
 
                 <P>It All Starts With Discussing Your Needs & Developing A Concept To Make Your Project Become A
                     Success</P>
 
 
             </div>
-            <div class="col-md-3 col-sm-3 col-12">
-                <i class='fa fa-check-square-o icon'></i>
-
-                <P>2.WE CAREFULLY PREPARE EACH OF YOUR ITEMS</p>
+            <div class="col-md-3 col-sm-3 col-12 pt-3">
+                <i class='fa fa-check-square-o icon zoom'></i>
+                
+                <P class="mt-3">2.WE CAREFULLY PREPARE EACH<br>
+                    OF YOUR ITEMS</p>
 
                 <P>Unpack Clean, Stream & Polish Your Products So They Look Their Best</P>
 
 
             </div>
-            <div class="col-md-3 col-sm-3 col-12">
-                <i class="fa fa-camera icon"></i>
-
-                <p>3.WE THEN PHOTOGRAPH YOUR PRODUCTS</p>
+            <div class="col-md-3 col-sm-3 col-12 pt-3">
+                <i class="fa fa-camera icon zoom"></i>
+                
+                <p class="mt-3">3.WE THEN PHOTOGRAPH YOUR<br>
+                    PRODUCTS</p>
 
                 <p>We Approach Each Item Indivisually, Providing Unique Lighting, Angle & Composition</p>
             </div>
-            <div class="col-md-3 col-sm-3 col-12">
-                <i class="fa fa-retweet icon" aria-hidden="true"></i>
+            <div class="col-md-3 col-sm-3 col-12 pt-3">
+                <i class="fa fa-retweet icon zoom" aria-hidden="true"></i>
 
-
-                <P>AFTER WE EDIT, RETOUCH & SEND YOU FINISHED IMAGES</P>
+                
+                <P class="mt-3">AFTER WE EDIT, RETOUCH &<br>SEND YOU FINISHED IMAGES</P>
 
                 <P>Repack Your Items With Care & Return Them With Final Images</P>
             </div>
         </div>
     </div>
 
-    <div class="hw1 container-fluid">
+    <div class="vidio container-fluid text-md-left text-sm-left text-center pt-5 pb-5">
         <div class="row center">
             <div class="col-md-4 col-sm-4">
                 <img src="dhanyut.jpg" class="rounded picture" alt="Cinque Terre">
-                <h3>Ckick to see more Product Photography</h3>
+                <p>Ckick to see more Product Photography</p>
             </div>
 
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4 pt-3 pt-sm-0">
                 <iframe title="vimeo-player" src="https://player.vimeo.com/video/105690274" class="picture">
                     frameborder="0" allowfullscreen></iframe>
-                <h3>Ckick to see more Product Vidios</h3>
+                <p>Ckick to see more Product Vidios</p>
             </div>
 
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4 pt-3 pt-sm-0">
                 <img src="dhanyut.jpg" class="rounded picture" alt="Cinque Terre">
-                <h3>Ckick to see more 360 Product Images</h3>
+                <p>Ckick to see more 360 Product Images</p>
             </div>
 
 
         </div>
     </div>
 
-    <div class="bg ourpeaple container-fluid">
+    <div class="bg ourpeaple container-fluid text-center pt-5 pb-5">
         <h1 class="center">Our People</h1>
 
         <div class="row">
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 col-12">
                 <img src="dhanyut.jpg" class="rounded" alt="Cinque Terre" width="150" height="100">
-                <h6 class="p2">Ryan</h6>
-                <div class="p3">
+                <h6>Ryan</h6>
+                <div>
                     <p>Lorem Ipsum<br>
                         Lorem Ipsum<br>
                         Lorem Ipsum<br>
@@ -238,10 +304,10 @@
                 </div>
             </div>
 
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 col-12">
                 <img src="dhanyut.jpg" class="rounded" alt="Cinque Terre" width="150" height="100">
-                <h6 class="p2">Kristna</h6>
-                <div class="p3">
+                <h6>Kristna</h6>
+                <div>
                     <p>Lorem Ipsum<br>
                         Lorem Ipsum<br>
                         Lorem Ipsum<br>
@@ -249,10 +315,10 @@
                 </div>
             </div>
 
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 col-12">
                 <img src="dhanyut.jpg" class="rounded" alt="Cinque Terre" width="150" height="100">
-                <h6 class="p2">Pheobe</h6>
-                <div class="p3">
+                <h6>Pheobe</h6>
+                <div>
                     <p>Lorem Ipsum<br>
                         Lorem Ipsum<br>
                         Lorem Ipsum<br>
@@ -260,10 +326,10 @@
                 </div>
             </div>
 
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 col-12">
                 <img src="dhanyut.jpg" class="rounded" alt="Cinque Terre" width="150" height="100">
-                <h6 class="p2">Steve</h6>
-                <div class="p3">
+                <h6>Steve</h6>
+                <div>
                     <p>Lorem Ipsum<br>
                         Lorem Ipsum<br>
                         Lorem Ipsum<br>
@@ -271,10 +337,10 @@
                 </div>
             </div>
 
-            <div class="col-md col-sm-4">
+            <div class="col-md col-sm-4 col-12">
                 <img src="dhanyut.jpg" class="rounded" alt="Cinque Terre" width="150" height="100">
-                <h6 class="p2">Was</h6>
-                <div class="p3">
+                <h6>Was</h6>
+                <div>
                     <p>Lorem Ipsum<br>
                         Lorem Ipsum<br>
                         Lorem Ipsum<br>
@@ -289,7 +355,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-6 col-12 pt-5 pb-5">
                 <h4>CONTACT</h4>
 
                 <form action="/action_page.php">
@@ -322,7 +388,7 @@
 
 
 
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-6 col-12 pt-5 pb-5">
                 <h4>GET IN TOUCH</h4>
                 <p>If you want to disscus your ideas for new project we would love to hearfrom you. Just feel out the
                     contact form or get in touch us via the detail below.</p>
@@ -364,12 +430,4 @@
     </script>
 </body>
 
-
-
-
-
 </html>
-
-<!-- height: 300px;
-width: 100%;
-background-color: grey; -->

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+<title>Web Brief page 2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+    .row>.column {
+        padding: 0 8px;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .column {
+        float: left;
+        width: 25%;
+    }
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+    }
+    /* Modal Content */
+    
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 85%;
+        max-width: 1200px;
+    }
+    /* The Close Button */
+    
+    @media only screen and (min-width: 769px) {
+        .modal-content {
+            width: 41%;
+        }
+    }
+    
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+    
+    .cursor {
+        cursor: pointer;
+    }
+    /* Next & previous buttons */
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    /* Position the "next button" to the right */
+    
+    .next {
+        right: -40px;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .prev {
+        left: -40px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Number text (1/3 etc) */
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    img {
+        margin-bottom: -4px;
+    }
+    
+    .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+    }
+    
+    .demo {
+        opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+    
+    img.hover-shadow {
+        transition: 0.3s;
+    }
+    
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    img {
+        width: 100%
+    }
+    /* for header */
+    
+    .background {
+        background-color: #D8D8D8
+    }
+    
+    .header {
+        height: 350px;
+        width: 100%;
+    }
+    
+    .hw {
+        width: 100%;
+    }
+    
+    .center {
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+
+
+    <!-- header starts here -->
+    <div class=" background header center container-fluid">
+
+        <!-- <img src="impack_rgb_TRANS.png" class="rounded-circle"> -->
+        <h1>PRODUCT PHOTOGRAPHY SYDNEY</h1>
+        <h3><i>Delivery Premium Product Photography</i></h3>
+
+        <div>
+            <button type="button" class="btn btn-outline-dark">CONTACT US NOW FOR FREE ADVICE ON
+                HOW TO SELL MORE</button>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.000.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.021.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.026.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.022.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.024.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.022.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.014.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.027.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.007.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.003.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.024.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.022.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.000.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.021.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.026.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.007.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.024.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.022.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.014.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.027.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.007.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.003.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.000.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <img src="Images/ProductPhotographySydney1.022.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- footer starts here -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <h4>CONTACT</h4>
+
+                    <form action="/action_page.php">
+
+                        <div class="form-group">
+                            <label>Name:</label>
+                            <input type="Text" class="form-control" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number:</label>
+                            <input class="form-control" placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group">
+                            <label>How did you find us Google Ad or Organic. Facebook Ad, Other? Thank You:</label>
+                            <input type="Text" class="form-control" placeholder=" ">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Massage:</label>
+                            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">SEND MASSAGE</button>
+                    </form>
+                </div>
+
+
+
+                <div class="col-md-6 col-sm-6">
+                    <h4>GET IN TOUCH</h4>
+                    <p>If you want to disscus your ideas for new project we would love to hearfrom you. Just feel out the contact form or get in touch us via the detail below.</p>
+                    <p>&nbsp;</p>
+                    <h4>IMPACK IMAGES PTY LTD</h4>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 21a Falcon Street<br> Crows Nest<br> Sydney<br> NSW 2065
+                    <p>&nbsp;</p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> studio@impackimages.com.au<br>
+
+                    <i class="fa fa-phone" aria-hidden="true"></i> Studio: 02 8060 6068<br>
+
+                    <i class="fa fa-mobile" aria-hidden="true"></i> 0449252146
+                </div>
+
+            </div>
+        </div>
+        <!-- footer end -->
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="Images/ProductPhotographySydney1.000.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="Images/ProductPhotographySydney1.021.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="Images/ProductPhotographySydney1.026.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images/ProductPhotographySydney1.022.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images/ProductPhotographySydney1.024.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images/ProductPhotographySydney1.014.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images/ProductPhotographySydney1.027.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images/ProductPhotographySydney1.007.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="Images/ProductPhotographySydney1.003.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+</body>
+
+</html>

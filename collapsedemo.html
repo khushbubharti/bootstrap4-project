@@ -1,0 +1,40 @@
+<style>
+    .section {
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        height: auto;
+        max-height: 600px;
+    }
+    
+    .section.collapsed {
+        max-height: 0;
+    }
+</style>
+
+<script>
+    // Look ma, [very little] Javascript!
+    function onBtnClick() {
+        console.log('clicked')
+            //document.querySelector('#toggle-button').addEventListener('click', function() {
+        document.querySelector('.section.collapsible').classList.toggle('collapsed');
+        //});
+    }
+</script>
+
+<div class="container">
+    <div class="section">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="section collapsible">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</div>
+
+
+<button id="toggle-button" onclick="onBtnClick()">Read More</button>
+
+<div style="width: 100%; height: 300px; background-color: azure;">
+
+</div>
